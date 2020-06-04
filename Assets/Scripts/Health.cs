@@ -1,13 +1,27 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour {
+    
     [SerializeField]
-    private int health = 100;
+    private int currentHealth = 100;
 
-    public int Health1 {
-        get => health;
-        set => health = value;
+    [SerializeField]
+    private GameObject deathVfx;
+    public int CurrentHealth {
+        get => currentHealth;
+        set => currentHealth = value;
+    }
+
+    private void Update() {
+        if (currentHealth <= 0) {
+            if (deathVfx) {
+                GameObject death = Instantiate(deathVfx, transform.position, Quaternion.identity);
+                Destroy(death, 1f);
+            }
+            Destroy(gameObject);
+        }
     }
 }
