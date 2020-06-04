@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 1668541742716373348}
   - component: {fileID: -8742243054560450898}
   - component: {fileID: 5265210468923975799}
+  - component: {fileID: -7330036013936836274}
+  - component: {fileID: -6772379625486979338}
+  - component: {fileID: 1427815814744883924}
   m_Layer: 0
   m_Name: Zucchini
   m_TagString: Untagged
@@ -138,3 +141,40 @@ PolygonCollider2D:
       - {x: 0.22999999, y: 0.07}
       - {x: -0.01, y: 0.26999998}
       - {x: -0.08, y: 0.28}
+--- !u!114 &-7330036013936836274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668541742716373351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3905f6f17a2e9a4083c895e6ae9a188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+--- !u!114 &-6772379625486979338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668541742716373351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec82954b7c95fb478fef5b83bc2b820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1427815814744883924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668541742716373351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39f3d787ffc76647bf988dff9900af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

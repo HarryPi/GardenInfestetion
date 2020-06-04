@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
-    private Rigidbody2D _body;
+
+    [SerializeField]
+    private float speed = 3f;
     
     // Start is called before the first frame update
     void Start() {
-        _body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update() {
-        
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 }
